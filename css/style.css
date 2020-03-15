@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 
-body{
+main{
   display: grid;
   grid-template-columns: 1fr;
   background-color: #C0C0C0;
@@ -128,7 +128,17 @@ nav li{
   transform: rotateY(180deg);
 }
 
+#sibs{
+  align-self: center;
+}
 
+#haw{
+  align-self: center;
+}
+
+#turb{
+  align-self: center;
+}
 
 
 
@@ -150,19 +160,19 @@ nav li{
 
 /* FOR SCREENS LARGER THAN 600 PIXELS */
 
-/* body{
+main{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
+  grid-template-columns: 1fr;
+  grid-column: auto;
+}
 
 /* FOR SCREENS LARGER THAN 900 PIXELS */
 
 
-/* @media all and (min-width: 900px){
+@media all and (min-width: 900px){
         body{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-column: auto;
             background-color: #C0C0C0;
-            text-align: center;
-            padding: 0px 30px 0px 0px;
-}} */
+}}
